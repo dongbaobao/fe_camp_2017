@@ -1,0 +1,87 @@
+*{
+	margin: 0;/*外边距*/
+	padding: 0;/*内边距*/
+}
+html,
+body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background-image: url('3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.loginbox{
+	width: 480px;
+	position: absolute;/*相对于上一级*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);/*线性平移*/
+	background-color: rgba(215, 246, 203, .4);/*透明度有a*/
+}
+.loginhead{
+	text-align: center;
+	padding:10px;
+	border-bottom:3px solid #fff;
+}
+h2{
+	color:#2E8B57;
+}
+.loginbody{
+	padding:20px;
+}
+.form-group{
+	text-align: center;
+	margin-bottom: 8px; 
+}
+
+label{
+	display:inline-block;/*label与input在同一行，用inline-block*/
+	width: 4em;
+	text-align: right;
+	margin-right: 1em;
+}
+input{
+	border: 1px solid #f3f3f3;
+	border-radius: 2px;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.usernamein{
+	width:250px;
+	height:25px;
+	font-size: 16px;
+	text-indent: 1.5em;/*缩进一点*/
+	margin-right: 30px;
+	background-image:url(people3.png);
+}
+.passwordin{
+	width:250px;
+	height:25px;
+	font-size: 16px;
+	text-indent: 1.5em;/*缩进一点*/
+	margin-right: 30px;
+	background-image:url(pass.png);
+}
+button{
+	height: 35px;
+	width: 300px;
+	background-color: hsl(140, 39%, 39%);
+	border:none;
+	color: white;
+	font-size: 20px;
+	cursor: pointer ;
+}
+button:hover{
+	background-color: hsl(46,139,87, 39%, 39%);
+}
+.checkbox{
+	display: inline-block;
+}
+.rightline{
+	display: block;
+    float: right;
+    margin-right: 110px;
+}
