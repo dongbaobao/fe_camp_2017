@@ -1,0 +1,51 @@
+html,body{
+	margin: 0;
+	background-color: white;
+}
+img{
+	display: block;
+	margin: 10px auto;
+}
+a{
+	text-decoration: none;//去掉下划线
+    background: transparent;
+    color: white;
+}
+th,td{
+	text-align: left;
+}
+.table2.th, .table2.td{
+    border-bottom: 1px solid gray;
+}
+p,h1,h2,h3{
+	text-align: left;
+	font-family:"Times New Roman", Times, serif;
+	font-weight: bold;
+	color: #237695;
+}
+h1{
+	font-size: 1.8em;
+}
+h2,h3{
+	font-size: 1.2em;
+}
+h2,.right-div-1,.right-div-2,.right-div-3,.right-div-4,.right-div-5{
+	border-bottom: 2px solid gray;
+}
+.left-div-content{
+	margin: 0 25px;
+}
+.left-div{
+	float: left;
+	width:330px;
+	height: 842.781px;
+	background-color: black;
+	color: white;
+}
+.right-div{
+	margin-left: 370px;
+	margin-right: 40px;
+}
+li{
+	list-style-type: square;
+}

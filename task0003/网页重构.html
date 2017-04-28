@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页重构</title>
+	<link rel="stylesheet" type="text/css" href="网页重构.css">
+</head>
+<body>
+	<div class="overall">
+		<!-- 上标题栏 -->
+		<div class="div-header">
+			<h2 class="div-header-h2">
+				<a href="http://ke.qq.com/course/list?mt=1001" target="_blank" title="IT.互联网_【在线 免费 课程】">IT.互联网</a>
+			</h2>
+			<ul class="div-header-ul">
+				<li class="div-header-li">
+					<a href="http://ke.qq.com/course/list?mt=1001" target="_blank" title="推荐_IT·互联网">推荐</a>
+				</li>
+				<li class="div-header-li">
+					<a href="http://ke.qq.com/course/list?mt=1001&st=2004" target="_blank" title="前端开发_IT·互联网">前端开发</a>
+				</li>
+				<li class="div-header-li">
+					<a href="http://ke.qq.com/course/list?mt=1001&st=2002" target="_blank" title="编程语言_IT·互联网">编程语言</a>
+				</li>
+				<li class="div-header-li">
+					<a href="http://ke.qq.com/course/list?mt=1001&st=2010" target="_blank" title="互联网营销_IT·互联网">互联网营销</a>
+				</li>
+				<li class="div-header-li">
+					<a href="http://ke.qq.com/course/list?mt=1001&st=2001" target="_blank" title="互联网产品_IT·互联网">互联网产品</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 内容部分，包括三个部分：左边的图片，中间的几个悬浮层，右边的排名 -->
+
+		<div class="div-content">
+
+			<!-- 左边的图片 -->
+			<a href="http://ke.qq.com/huodong/yunying/index.html" target="_blank" class="div-content-a" title="产品运营_在线IT·互联网" jump-start="topfloor_banner" jump-through="1" auto-test="mod_categories_img_1"> 
+			    <img src="http://p.qpic.cn/qqcourse/QFzQYCgCrxliaUUkiaCewic70VBuUQLKZia4jliaPGQgXQiav8dOLdq9rmzVia3VSFUI3nb/?tp=webp" alt="产品运营_在线IT·互联网" class="img1" width="240">
+	        </a>
+
+			<!-- 中间的悬浮层 -->  
+			<div class="div-content-main">
+				<ul class="div-content-ul">
+					<li class="div-content-li" jump-start="topfloor_class_click" jump-through="1&amp;1&amp;1">
+					    <a href="http://ke.qq.com/course/199940" target="_blank" class="div-content-li-a" data-id="199940" data-index="1" report-tdw="action=Coursecard_Coursecover-clk&amp;ver1=199940&amp;ver3=3.1.1" cors-name="course">
+					         <img src="http://10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDndrsjaPDBsohiaQYSNbjQOeVfHSkFtSWvxzSux0b2eX5Hs4rUwkhLq6vrXJLkRibFQ/220?tp=webp" class="img2" width="220" height="124"> 
+					    </a>
+					    <div class="item-status">
+					       <span class="item-status-step">随到随学（共13节）</span>
+					    </div>
+					    <h4 class="item-tt">
+					       <a href="http://ke.qq.com/course/199940" target="_blank" class="item-tt-link" title="Javascript就业班-【动脑学院】" report-tdw="action=Coursecard_Coursesname-clk&amp;ver1=199940&amp;ver3=3.1.1" cors-name="course">Javascript就业班-【动脑学院】</a>
+					    </h4>
+					       <div class="item-line item-line--bottom">
+					           <span class="line-cell item-price free">免费</span>
+					           <span class="item-source">
+					               <a href="http://dongnao.ke.qq.com" target="_blank" class="item-source-link" title="动脑学院" rel="nofollow" report-tdw="    action=Coursecard_Courseregister-clk&amp;ver1=199940&amp;ver3=3.1.1">动脑学院</a>
+					           </span>
+					       </div>
+				    </li>
+				    <li></li>
+				</ul>
+
+				<!-- 右边的排名——侧栏 ，用div包裹-->
+				<aside class="div-content-aside">
+					<div class="course-rank">
+
+						<!-- 排名的导航栏 -->
+						<div class="course-rank-header">
+							<ul class="course-rank-header-ul">
+								<li class="course-rank-header-li1 course-rank-header-li2" data-sid="1001" data-tab="free">
+									<span class="course-rank-header-span">免费排行</span>
+								</li>
+								<li class="course-rank-header-li1 course-rank-header-li2" data-sid="1001" data-tab="pay">
+									<span class="course-rank-header-span">付费排行</span>
+								</li>
+							</ul>
+						</div>
+
+						<!-- 排名的内容部分 -->
+						<div class="course-rank-content">
+							<ul class="course-rank-content-ul">
+								<li class="course-rank-content-li" jump-start="topfloor_rank_click" jump-through="1"> 
+									<span class="course-rank-content-span course-rank-content-span1">1</span>
+									<a href="/course/201811" target="_blank" class="course-rank-content-a" title="17绝技最新暴力流量三天破万不刷单【全网唯一】每天下午晚上开课" data-id="201811">17绝技最新暴力流量三天破万不刷单【全网唯一】每天下午晚上开课</a>
+									</li>
+									<li class="course-rank-content-li" jump-start="topfloor_rank_click" jump-through="2"> 
+										<span class="course-rank-content-span course-rank-content-span2">2</span>
+										<a href="/course/195993" target="_blank" class="course-rank-content-a" title="Python从零到项目实战" data-id="195993">Python从零到项目实战</a>
+									</li>
+									<li class="course-rank-content-li" jump-start="topfloor_rank_click" jump-through="3"> 
+										<span class="course-rank-content-span course-rank-content-span3">3</span>
+										<a href="/course/192641" target="_blank" class="course-rank-content-a" title="C语言/C++语言入门到项目实战" data-id="192641">C语言/C++语言入门到项目实战</a>
+									</li>
+									<li class="course-rank-content-li" jump-start="topfloor_rank_click" jump-through="4"> 
+										<span class="course-rank-content-span  course-rank-content-span4">4</span>
+										<a href="/course/155221" target="_blank" class="course-rank-content-a" title="Java入门必备/VIP内部资料首次公开（含直播）【柠檬学院】" data-id="155221">Java入门必备/VIP内部资料首次公开（含直播）【柠檬学院】</a>
+									</li>
+									<li class="course-rank-content-li" jump-start="topfloor_rank_click" jump-through="5"> 
+										<span class="course-rank-content-span  course-rank-content-span5">5</span>
+										<a href="/course/131889" target="_blank" class="course-rank-content-a" title="JAVA开发/Nginx/NoSQL/高并发/架构/集群/性能优化【动脑学院】" data-id="131889">JAVA开发/Nginx/NoSQL/高并发/架构/集群/性能优化【动脑学院】</a>
+									</li>
+									<li class="course-rank-content-li" jump-start="topfloor_rank_click" jump-through="6"> 
+										<span class="course-rank-content-span  course-rank-content-span6">6</span>
+										<a href="/course/191772" target="_blank" class="course-rank-content-a" title="Java零基础入门10天A计划" data-id="191772">Java零基础入门10天A计划</a>
+									</li>
+									<li class="course-rank-content-li" jump-start="topfloor_rank_click" jump-through="7"> 
+										<span class="course-rank-content-span  course-rank-content-span7">7</span>
+										<a href="/course/112539" target="_blank" class="course-rank-content-a" title="Python 完全零基础入门精讲 【优品课堂】" data-id="112539">Python 完全零基础入门精讲 【优品课堂】</a>
+									</li>
+									<li class="course-rank-content-li" jump-start="topfloor_rank_click" jump-through="8"> 
+										<span class="course-rank-content-span  course-rank-content-span8">8</span>
+										<a href="/course/203017" target="_blank" class="course-rank-content-a" title="易语言编程之菜鸟腾飞" data-id="203017">易语言编程之菜鸟腾飞</a>
+									</li>
+									<li class="course-rank-content-li" jump-start="topfloor_rank_click" jump-through="9"> 
+										<span class="course-rank-content-span  course-rank-content-span9">9</span>
+										<a href="/course/112455" target="_blank" class="course-rank-content-a" title="小白学编程 C语言 编程" data-id="112455">小白学编程 C语言 编程</a>
+									</li>
+									<li class="course-rank-content-li" jump-start="topfloor_rank_click" jump-through="10"> 
+										<span class="course-rank-content-span  course-rank-content-span10">10</span>
+										<a href="/course/8509" target="_blank" class="course-rank-content-a" title="史上最牛的Linux视频教程" data-id="8509">史上最牛的Linux视频教程</a>
+									</li>
+								</ul>
+
+	        	</div>
+	        </div>
+	    </aside>
+
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>
