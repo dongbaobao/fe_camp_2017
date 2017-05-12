@@ -35,6 +35,12 @@ p,h1,h2,h3{
 	color: #237695;
 	font-size: 1rem;
 }
+h1::first-letter {
+  font-size: 2em;
+  vertical-align: baseline;
+  float: left;
+  color: red;
+}
 h1{
 	font-size: 1.8rem;
 }
