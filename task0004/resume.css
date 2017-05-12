@@ -1,0 +1,71 @@
+html,body{
+	margin: 0;
+	background-color: white;
+	font-size: 16px;
+}
+@media screen and (max-width: 800px) {
+    html {
+      font-size: 14px;
+    }
+  }
+ @media screen and (max-width: 600px) {
+    html {
+      font-size: 12px;
+    }
+  }
+img{
+	display: block;
+	margin: 10px auto;
+}
+a{
+	text-decoration: none;//去掉下划线
+    background: transparent;
+    color: white;
+}
+th,td{
+	text-align: left;
+}
+.table2.th, .table2.td{
+    border-bottom: 1px solid gray;
+}
+p,h1,h2,h3{
+	text-align: left;
+	font-family:"Times New Roman", Times, serif;
+	font-weight: bold;
+	color: #237695;
+	font-size: 1rem;
+}
+h1{
+	font-size: 1.8rem;
+}
+h2,h3{
+	font-size: 1.2rem;
+}
+h2,.main-content div:not(:last-child){
+	border-bottom: 2px solid gray;
+}
+.introduction-content{
+	margin: 0 25px;
+}
+.introduction{
+	float: left;
+	width: 350px;
+	height: 900px;
+	background-color: black;
+	color: white;
+}
+.main-content{
+	margin-left: 380px;
+	margin-right: 40px;
+}
+li{
+	list-style-type: square;
+}
+a:hover{
+	background-color:#0000FF;
+}
+.skill{
+		width: 150px;
+		height: 10px;
+		background-color: #eee;
+}
