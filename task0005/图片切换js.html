@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片切换js</title>
+    <style>
+        .main-box{
+            margin: 0;
+            width:1366px;
+            height:768px;
+            background-image: url(bw-bg.png);
+        }
+        .img-box{
+        	width: 520px;
+        	height: 650px;
+        	position: relative;
+            top: 50px;
+            left: 100px;
+        }
+        .img-box img{
+        	position: absolute;
+        	top: 0;
+            left: 0;
+        	z-index: 1;
+            display: block;
+            opacity: 0;//透明
+        }
+        .btn-box{
+            width: 210px;
+            height: auto;
+            position: absolute;
+            top: 200px;
+            right: 350px;
+        }
+        .btn-box button{
+            width: 240px;
+            height: 49px;
+            border-radius: 5px;
+            font-size: 28px;
+            background: url(btn-gray.png);
+            color: lightblue;
+            margin-top: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="main-box">
+    <div class=img-box>
+        <img class="bw" src="bw.png">
+        <img class="xx" src="xx.png">
+    </div>
+    <div class="btn-box">
+        <button id="bw">巴卫</button>
+        <button id="xx">小新</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+	var btns=document.getElementsByTagName("button");
+    var imgs=document.getElementsByTagName("img");
+    var main=document.getElementById("main-box");
+
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function(){
+            var id=this.id;//button的id
+            SwitchPicture(id);
+           }
+    }
+
+    function SwitchPicture(id){
+        for(var i=0;i<imgs.length;i++){
+            if(imgs[i].className==id){
+                imgs[i].style.opacity=1;
+                btns[i].style.backgroundImage="url(btn-blue.png)";
+                btns[i].style.color="black";
+                // if(id=="xx")
+                // 	{
+                // 		main.style.backgroundImage="url(xx-bg.png)";
+                // 	}
+                // else if(id=="bw")
+                // 	{
+                // 		main.style.backgroundImage="url(bw-bg.png)";
+                // 	}
+            }
+            else {
+                imgs[i].style.opacity=0; 
+                btns[i].style.backgroundImage="url(btn-gray.png)";  
+                btns[i].style.color="lightblue";
+            }
+        }
+    }
+</script>
+</body>
+</html>
