@@ -59,7 +59,7 @@
 <script type="text/javascript">
 	var btns=document.getElementsByTagName("button");
     var imgs=document.getElementsByTagName("img");
-    var main=document.getElementById("main-box");
+    var main=document.querySelector(".main-box");
 
     for(var i=0;i<btns.length;i++){
         btns[i].onclick=function(){
@@ -74,14 +74,15 @@
                 imgs[i].style.opacity=1;
                 btns[i].style.backgroundImage="url(btn-blue.png)";
                 btns[i].style.color="black";
-                // if(id=="xx")
-                // 	{
-                // 		main.style.backgroundImage="url(xx-bg.png)";
                 // 	}
                 // else if(id=="bw")
-                // 	{
-                // 		main.style.backgroundImage="url(bw-bg.png)";
-                // 	}
+                if(id=="xx")
+                		main.style.backgroundImage="url(xx-bg.png)";
+                	}
+                else if(id=="bw")
+                	{
+                		main.style.backgroundImage="url(bw-bg.png)";
+                	}
             }
             else {
                 imgs[i].style.opacity=0; 
